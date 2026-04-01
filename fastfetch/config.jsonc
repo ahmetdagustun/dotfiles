@@ -9,11 +9,15 @@
     },
     "separator": ""
   },
-  "logo": {
+"logo": {
     "type": "kitty-direct",
-    "source": "~/.config/fastfetch/marin.png",
-    "width": 20,
-    "height": 10
+    "source": "~/dotfiles/fastfetch/hatsunemiku.png", 
+    "width": 30, 
+    "height": 14,
+    "padding": {
+      "top": 1,
+      "left": 3
+    }
   },
   "modules": [
     "break",
@@ -78,5 +82,3 @@
     }
   ]
 }
-
-#https://raw.githubusercontent.com/ayanrajpoot10/dotfiles/refs/heads/main/.config/fastfetch/config.jsonc

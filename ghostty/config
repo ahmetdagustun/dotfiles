@@ -1,0 +1,25 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/ahmetdagustun/Library/Application Support/com.mitchellh.ghostty/config
+
+
+#theme = Gruvbox Dark
+#theme = Catppuccin Mocha
+theme = TokyoNight
+#theme = Kanagawa Dragon
+background-opacity = 0.75
+font-family="JetBrainsMono Nerd Font Mono"
+macos-icon = retro
+macos-icon-frame = chrome
+
+# Removes the gray title bar for a "borderless" look
+macos-titlebar-style = hidden
+
+# Makes the window corners match your MacBook screen radius
+window-padding-x = 10
+window-padding-y = 10
+
+background-blur = 10

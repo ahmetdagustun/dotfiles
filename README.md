@@ -1,6 +1,6 @@
 - **WM:** [AeroSpace](https://github.com/nikitabobko/AeroSpace)
-- **Terminal:** [Ghostty](https://mitchellh.com/ghostty)
-- **Bar:** [Simple-bar](https://github.com/Jean-Emmanuel/simple-bar)
+- **Terminal:** [Ghostty](https://ghostty.org)
+- **Bar:** [Simple-bar](https://github.com/Jean-Tinland/simple-bar)
 - **Borders:** [JankyBorders](https://github.com/FelixKratz/JankyBorders)
 
 ## 🚀 Quick Setup

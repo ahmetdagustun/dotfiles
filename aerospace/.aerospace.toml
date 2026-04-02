@@ -70,7 +70,9 @@ outer.right =      10
 [mode.main.binding]
 
 # This will toggle the window between "Tiled" and "Free Floating"
-alt-shift-z = 'layout floating tiling'
+alt-z = 'layout tiling'
+alt-x = 'layout floating'
+alt-c = 'layout accordion'
 
 # Close the focused window
 alt-shift-q = 'close'

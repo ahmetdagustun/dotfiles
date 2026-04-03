@@ -127,3 +127,8 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval $(thefuck --alias fk)
+
+# Created by `pipx` on 2026-04-03 10:30:14
+export PATH="$PATH:/Users/ahmetdagustun/.local/bin"
+
+eval "$(zoxide init zsh)"

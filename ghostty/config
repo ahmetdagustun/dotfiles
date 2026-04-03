@@ -23,3 +23,5 @@ window-padding-x = 10
 window-padding-y = 10
 
 background-blur = 10
+
+confirm-close-surface = false

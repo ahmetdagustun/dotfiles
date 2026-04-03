@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Gruvbox Dark Palette
+GREY=0xff3c3836
+BG=0xff282828
+FG=0xffebdbb2
+YELLOW=0xffd79921
+PURPLE=0xffb16286
+
+sketchybar --bar \
+  height=32 \
+  color=$BG \
+  shadow=on \
+  padding_left=10 \
+  padding_right=10 \
+  margin=5 \
+  corner_radius=9 \
+  blur_radius=20 \
+  position=top
+
+# Default settings for all items
+sketchybar --default \
+  updates=when_needed \
+  icon.font="JetBrainsMono Nerd Font:Bold:14.0" \
+  label.font="JetBrainsMono Nerd Font:Bold:12.0" \
+  icon.color=$FG \
+  label.color=$FG
+
+# Add AeroSpace Workspace Indicator
+sketchybar --add event aerospace_workspace_change
+for i in 1 2 3 4 5; do
+  sketchybar --add item space.$i left \
+    --subscribe space.$i aerospace_workspace_change \
+    --set space.$i \
+    icon=$i \
+    padding_left=5 \
+    padding_right=5 \
+    label.drawing=off \
+    background.color=$GREY \
+    background.corner_radius=5 \
+    background.height=24 \
+    script="$CONFIG_DIR/plugins/space.sh $i"
+done
+
+# Add Clock
+sketchybar --add item clock right \
+  --set clock update_freq=10 icon=󱑒 label="$(date +'%H:%M')"

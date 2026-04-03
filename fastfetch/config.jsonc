@@ -1,84 +1,100 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "display": {
+"display": {
     "key": {
-      "width": 10
+      "width": 12 
     },
-    "size": {
-      "binaryPrefix": "jedec"
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": " " // This was previously 'charRemaining'
+      },
+      "width": 13
     },
-    "separator": ""
+    "separator": " ➜  " 
   },
-"logo": {
+  "logo": {
     "type": "kitty-direct",
-    "source": "~/dotfiles/fastfetch/hatsunemiku.png", 
-    "width": 30, 
-    "height": 14,
+    "source": "~/dotfiles/fastfetch/hatsunemiku.png",
+    "width": 28,
+    "height": 13,
     "padding": {
-      "top": 1,
-      "left": 3
+      "top": 2,
+      "left": 4
     }
   },
   "modules": [
-    "break",
+    "title",
+    "separator",
     {
       "type": "os",
-      "key": "os",
-      "keyColor": "yellow",
-      "format": "{name}"
+      "key": "󰀵 os", // Using Nerd Font icons for keys
+      "keyColor": "magenta"
+    },
+    {
+      "type": "host",
+      "key": "󰌢 mac",
+      "keyColor": "magenta"
     },
     {
       "type": "kernel",
-      "key": "ker",
-      "keyColor": "green"
-    },
-    {
-      "type": "packages",
-      "key": "pkgs",
-      "keyColor": "cyan"
-    },
-    {
-      "type": "shell",
-      "key": "sh",
-      "keyColor": "blue",
-      "format": "{pretty-name}"
-    },
-    {
-      "type": "wm",
-      "key": "wm",
-      "keyColor": "red",
-      "format": "{pretty-name}"
+      "key": "󰒋 ker",
+      "keyColor": "blue"
     },
     {
       "type": "uptime",
-      "key": "up",
-      "keyColor": "green"
+      "key": "󰔚 up",
+      "keyColor": "blue"
+    },
+    {
+      "type": "packages",
+      "key": "󰏗 pkg",
+      "keyColor": "blue"
+    },
+    {
+      "type": "shell",
+      "key": "󱆃 sh",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "terminal",
+      "key": "󰆍 term",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "display",
+      "key": "󰍹 res",
+      "keyColor": "yellow"
     },
     {
       "type": "cpu",
-      "key": "cpu",
-      "keyColor": "red",
-      "format": "{name}"
+      "key": "󰻠 cpu",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 gpu",
+      "keyColor": "yellow"
     },
     {
       "type": "memory",
-      "key": "ram",
-      "keyColor": "yellow",
-      "format": "{used} / {total}"
+      "key": "󰑭 ram",
+      "keyColor": "red"
     },
     {
-      "type": "disk",
-      "key": "disk",
-      "keyColor": "cyan",
-      "folders": [
-        "/"
-      ],
-      "format": "{size-used} / {size-total}"
+      "type": "battery",
+      "key": "󰁹 bat",
+      "keyColor": "green"
+    },
+    {
+        "type": "localip",
+        "key": "󰩟 ip",
+        "keyColor": "green"
     },
     "break",
     {
-      "type": "custom",
-      "format": "\u001b[33m󰮯 \u001b[32m󰊠 \u001b[34m󰊠 \u001b[31m󰊠 \u001b[36m󰊠 \u001b[35m󰊠 \u001b[37m󰊠 \u001b[97m󰊠"
+      "type": "colors",
+      "symbol": "circle" // Replaces your custom string with dynamic color blocks
     }
   ]
 }

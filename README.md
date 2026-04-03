@@ -11,7 +11,7 @@ My personal dotfiles,
 * **File Manager:** [Yazi](https://github.com/sxyazi/yazi)
 
 ## To bypass restrictions in Turkiye.
-* **SpoofDPI-TR:** ([SpoofDPI](https://github.com/renardozt/SpoofDPI-Turkiye)
+* **SpoofDPI-TR:** ([SpoofDPI](https://github.com/renardozt/SpoofDPI-Turkiye))
 
 ## ⌨️ Custom Keybindings (Alt = ⌥)
 * `Alt + T` ➜ Launch Ghostty

@@ -135,14 +135,22 @@ export PATH="$PATH:/Users/ahmetdagustun/.local/bin"
 
 eval "$(zoxide init zsh)"
 
+function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
+
 alias spoofon='launchctl load ~/Library/LaunchAgents/com.spoofdpi.plist'
 alias spoofoff='launchctl unload ~/Library/LaunchAgents/com.spoofdpi.plist'
 alias dots="cd ~/dotfiles"
 alias zconf="code ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias bsync='brew bundle dump --force --file=~/dotfiles/Brewfile && cd ~/dotfiles && git add Brewfile && git commit -m "update Brewfile" && git push && cd -'
-alias mc="ssh adagustun@100.66.114.110 'screen -r minecraft'"
-alias y="yazi"
+alias mc="ssh adagustun@100.66.114.110"
 alias path='echo $PATH | tr ":" "\n"'
 alias ports="sudo lsof -iTCP -sTCP:LISTEN -P -n"
 alias speed="networkQuality"

@@ -110,8 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 
 export PATH=$PATH:/Users/ahmetdagustun/.spicetify
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -154,3 +152,7 @@ alias mc="ssh adagustun@100.66.114.110"
 alias path='echo $PATH | tr ":" "\n"'
 alias ports="sudo lsof -iTCP -sTCP:LISTEN -P -n"
 alias speed="networkQuality"
+alias ls="eza --icons"
+alias ll="eza --icons -la"
+alias lt="eza --icons --tree"
+alias lg="lazygit"

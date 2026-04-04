@@ -132,3 +132,9 @@ eval $(thefuck --alias fk)
 export PATH="$PATH:/Users/ahmetdagustun/.local/bin"
 
 eval "$(zoxide init zsh)"
+
+alias spoofon='launchctl load ~/Library/LaunchAgents/com.spoofdpi.plist'
+alias spoofoff='launchctl unload ~/Library/LaunchAgents/com.spoofdpi.plist'
+alias dots="cd ~/dotfiles"
+alias zconf="code ~/.zshrc"
+alias reload="source ~/.zshrc"

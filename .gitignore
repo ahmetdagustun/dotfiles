@@ -1,1 +1,3 @@
 .DS_Store
+# Ignore local node dependencies for the bar server
+simple-bar-server/node_modules/

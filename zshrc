@@ -138,3 +138,4 @@ alias spoofoff='launchctl unload ~/Library/LaunchAgents/com.spoofdpi.plist'
 alias dots="cd ~/dotfiles"
 alias zconf="code ~/.zshrc"
 alias reload="source ~/.zshrc"
+alias bsync='brew bundle dump --force --file=~/dotfiles/Brewfile && cd ~/dotfiles && git add Brewfile && git commit -m "update Brewfile" && git push && cd -'

@@ -140,3 +140,7 @@ alias zconf="code ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias bsync='brew bundle dump --force --file=~/dotfiles/Brewfile && cd ~/dotfiles && git add Brewfile && git commit -m "update Brewfile" && git push && cd -'
 alias mc="ssh adagustun@100.66.114.110 'screen -r minecraft'"
+alias y="yazi"
+alias path='echo $PATH | tr ":" "\n"'
+alias ports="sudo lsof -iTCP -sTCP:LISTEN -P -n"
+alias speed="networkQuality"

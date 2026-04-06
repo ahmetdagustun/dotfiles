@@ -7,6 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.cargo/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -156,3 +157,5 @@ alias ls="eza --icons"
 alias ll="eza --icons -la"
 alias lt="eza --icons --tree"
 alias lg="lazygit"
+alias ytd='yt-dlp'
+alias ytdja='yt-dlp --write-sub --sub-lang ja'export PATH="$HOME/.cargo/bin:$PATH"

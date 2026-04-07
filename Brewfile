@@ -59,6 +59,7 @@ brew "rust"
 brew "sevenzip"
 brew "sl"
 brew "spoofdpi"
+brew "spotify_player"
 brew "starship"
 brew "stow"
 brew "thefuck"
@@ -106,7 +107,6 @@ cask "thaw"
 cask "ubersicht"
 mas "Bitwarden", id: 1352778147
 mas "DaVinci Resolve", id: 571213070
-mas "Goodnotes", id: 1444383602
 mas "Keynote", id: 409183694
 mas "LocalSend", id: 1661733229
 mas "Numbers", id: 409203825

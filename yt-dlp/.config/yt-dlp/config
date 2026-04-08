@@ -1,2 +1,6 @@
 --paths ~/Movies/ytd
 -f bestvideo+bestaudio
+-o "%(playlist_index)s - %(title)s.%(ext)s"
+--merge-output-format mkv
+--embed-thumbnail
+--add-metadata

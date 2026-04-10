@@ -199,3 +199,31 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+
+# --- AeroSpace Stability Rules ---
+
+# GIMP: Multi-window architecture is a tiling nightmare
+[[on-window-detected]]
+if.app-id = 'org.gimp.gimp'
+run = 'layout floating'
+
+# Obsidian: Prevents crashes during workspace switching/closing
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'layout floating'
+
+# Discord: Fixes "phantom window" race conditions
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = 'layout floating'
+
+# Preview: Prevents crashes when closing PDFs/Images
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
+run = 'layout floating'
+
+# QuickTime: Prevents crashes on video close/fullscreen toggle
+[[on-window-detected]]
+if.app-id = 'com.apple.QuickTimePlayerX'
+run = 'layout floating'

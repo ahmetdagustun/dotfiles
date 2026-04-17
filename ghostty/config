@@ -5,6 +5,8 @@
 #
 #   /Users/ahmetdagustun/Library/Application Support/com.mitchellh.ghostty/config
 
+command = /opt/homebrew/bin/fish
+
 
 #theme = Gruvbox Dark
 #theme = Catppuccin Mocha

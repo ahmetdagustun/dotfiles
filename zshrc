@@ -159,3 +159,4 @@ alias lt="eza --icons --tree"
 alias lg="lazygit"
 alias ytd='yt-dlp'
 alias ytdja='yt-dlp --write-sub --sub-lang ja'export PATH="$HOME/.cargo/bin:$PATH"
+alias todo='./meowdo'

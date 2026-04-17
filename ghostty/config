@@ -13,7 +13,7 @@ command = /opt/homebrew/bin/fish
 theme = tokyonight
 #theme = Kanagawa Dragon
 background-opacity = 0.75
-font-family="JetBrainsMono Nerd Font Mono"
+font-family="FiraCode Nerd Font Mono"
 macos-icon = retro
 macos-icon-frame = chrome
 
